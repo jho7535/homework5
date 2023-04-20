@@ -122,7 +122,7 @@ void enQueue(QueueType *cQ, element item)
 	if(isFull(cQ)) return; // 큐가 가득 찬 경우에는 enQueue 작업 수행하지 않고 종료
 	else {
 		cQ->rear = (cQ->rear + 1) % MAX_QUEUE_SIZE; // rear를 순환하면서 다음 위치로 이동
-		cQ->queue[cQ->rear] = item; // 다음 위치에 item 값을 저장하여 enQueue 작업 수행
+		cQ->queue[cQ->rear] = item; // 다음 위치에 item 값을 저장하여 enQueue 작업 수행.
 	}
 }
 
